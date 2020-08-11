@@ -23,7 +23,6 @@ add_subdirectory(ogx.token)
 ```
 //创建帐号
 cleos -u 'http://openapi.eos.ren' system newaccount --stake-net "0.1000 EOS" --stake-cpu "0.1000 EOS" --buy-ram-kbytes 6 tp organixtoken EOS77f1D5xApr9RaE7vS6ZDqWb9HteXhakoHgU6GZV6RzFu4tzTSR EOS77f1D5xApr9RaE7vS6ZDqWb9HteXhakoHgU6GZV6RzFu4tzTSR
-cleos -u 'http://openapi.eos.ren' system buyram itokenpocket organixtoken '5.0000 EOS' -p itokenpocket@active
 
 
 cd build
@@ -38,6 +37,5 @@ cleos -u 'https://eospush.tokenpocket.pro' push action organixtoken issue '["org
 ```
 ## 转账
 ```
-cleos -u 'https://eospush.tokenpocket.pro' push action organixtoken transfer '["organixtoken", "itokenpocket", "0.0001 OGX", ""]' -p organixtoken
-cleos -u 'https://eospush.tokenpocket.pro' push action organixtoken transfer '["itokenpocket", "organixtoken", "0.0001 OGX", ""]' -p itokenpocket
+cleos -u 'https://eospush.tokenpocket.pro' push action organixtoken transfer '["organixtoken", "b1", "0.0001 OGX", ""]' -p organixtoken
 ```
