@@ -22,7 +22,6 @@ target/
 # py
 *.pyc
 local/
-include/
 logs/
 
 # system ignore

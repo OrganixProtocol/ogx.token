@@ -79,7 +79,7 @@ void token::transfer( const name&    from,
                       const asset&   quantity,
                       const string&  memo )
 {
-    check( from == "organixtoken"_n, "transfer disabled" );
+    check( from == OGX_CODE, "transfer disabled" );
 
     check( from != to, "cannot transfer to self" );
     require_auth( from );

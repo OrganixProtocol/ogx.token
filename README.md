@@ -2,8 +2,8 @@
 
 ## 依赖环境
 
-1. eosio.cdt --- branch: release/1.5.x 或以上
-2. eosio.contract --- tag:  v1.5.2 或以上
+1. eosio.cdt --- tag: v1.7.0 或以上
+2. eosio.contract --- tag:  v1.9.1 或以上
 
 ## 编译
 
