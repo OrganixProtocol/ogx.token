@@ -5,7 +5,7 @@
 
 #include <string>
 
-#define TEST 1
+//#define TEST 1
 #if TEST
 #define OGX_CODE "orgainxtoken"_n
 #else

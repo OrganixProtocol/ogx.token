@@ -22,18 +22,18 @@ add_subdirectory(ogx.token)
  
 ```
 //创建帐号
-cleos -u 'http://openapi.eos.ren' system newaccount --stake-net "0.1000 EOS" --stake-cpu "0.1000 EOS" --buy-ram-kbytes 6 tp organixtoken EOS77f1D5xApr9RaE7vS6ZDqWb9HteXhakoHgU6GZV6RzFu4tzTSR EOS77f1D5xApr9RaE7vS6ZDqWb9HteXhakoHgU6GZV6RzFu4tzTSR
+cleos -u 'https://eospush.tokenpocket.pro' system newaccount --stake-net "0.1000 EOS" --stake-cpu "0.1000 EOS" --buy-ram-kbytes 6 tp organixtoken EOS77f1D5xApr9RaE7vS6ZDqWb9HteXhakoHgU6GZV6RzFu4tzTSR EOS77f1D5xApr9RaE7vS6ZDqWb9HteXhakoHgU6GZV6RzFu4tzTSR
 
 
 cd build
-cleos -u 'http://openapi.eos.ren' set contract organixtoken ./ogx.token -p organixtoken
+cleos -u 'https://eospush.tokenpocket.pro' set contract organixtoken ./ogx.token -p organixtoken
 ```
 
 ## 创建代币
 ```
 cleos -u 'https://eospush.tokenpocket.pro' push action organixtoken create '["organixtoken", "100000000.0000 OGX"]' -p organixtoken
 
-cleos -u 'https://eospush.tokenpocket.pro' push action organixtoken issue '["organixtoken", "1.0000 OGX", "test"]' -p organixtoken
+cleos -u 'https://eospush.tokenpocket.pro' push action organixtoken issue '["organixtoken", "99999999.0000 OGX", ""]' -p organixtoken
 ```
 ## 转账
 ```
